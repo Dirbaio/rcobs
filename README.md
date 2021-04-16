@@ -39,7 +39,7 @@ rCOBS-encoded:  11 22 33 44 05
 Message:        11 22 00  33
 COBS-encoded:   03 11 22  02 33
 rCOBS-encoded:  11 22 03  33 02
-Cr
+
 Message:        11 00  00  00  42 42 42
 COBS-encoded:   02 11  01  01  04 42 42 42
 rCOBS-encoded:  11 02  01  01  42 42 42 04

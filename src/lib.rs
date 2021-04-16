@@ -1,7 +1,5 @@
 #![cfg_attr(not(feature = "std"), no_std)]
 
-use std::convert::Infallible;
-
 /// Write trait to use with Encoder
 pub trait Write {
     type Error;
@@ -73,7 +71,7 @@ pub fn encode(data: &[u8]) -> Vec<u8> {
     struct VecWriter<'a>(&'a mut Vec<u8>);
 
     impl<'a> Write for VecWriter<'a> {
-        type Error = Infallible;
+        type Error = std::convert::Infallible;
         fn write(&mut self, byte: u8) -> Result<(), Self::Error> {
             self.0.push(byte);
             Ok(())

@@ -19,5 +19,9 @@ jobs:
         with:
           toolchain: nightly
           override: true
-      - name: Build
-        run: cargo build
+      - name: install
+        run: rustup target add thumbv7em-none-eabi
+      - name: Test
+        run: cargo test
+      - name: Build no_std
+        run: cargo build --target thumbv7em-none-eabi --no-default-features

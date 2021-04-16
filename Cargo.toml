@@ -1,6 +1,6 @@
 [package]
 name = "rcobs"
-version = "0.1.0"
+version = "0.1.1"
 authors = ["Dario Nieuwenhuis <dirbaio@dirbaio.net>"]
 description = "Reverse-COBS encoding"
 repository = "https://github.com/Dirbaio/rcobs"
